@@ -89,6 +89,62 @@ textarea {
 
 html {
   background-color: #555555;
+  text-align: center;
+}
+
+button {
+  padding: 0 16px;
+  background-color: #888888;
+  border-radius: 25px;
+  font-size: smaller;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.fullInset {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scoreListing {
+  position: fixed;
+  padding: 0px 10px;
+  font-family: 'Odibee Sans', cursive;
+  color: #cccccc;
+  font-size: 300%;
+  letter-spacing: .2rem;
+}
+
+#endGamePopup {
+  align-self: center;
+  position: fixed;
+  background-color: #999999;
+  border-radius: 50px;
+  font-family: 'Odibee Sans', cursive;
+  color: #222222;
+  font-size: 300%;
+  letter-spacing: .2rem;
+  padding: 10px 50px;
+  width: fit-content;
+  box-shadow: 3px 5px;
+}
+
+#endGamePopup > * {
+  margin: 10px;
 }
 
 /* ==========================================================================

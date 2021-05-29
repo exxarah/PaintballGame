@@ -19,12 +19,24 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- GFonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
+  <!-- Based off https://www.youtube.com/watch?v=eI9idPTT0c4 -->
+  <div id="scoreListing" class="noselect"><span>Score: </span><span id="scoreElement">0</span></div>
+  <div id="endGameElement" class="fullInset noselect">
+    <div id="endGamePopup">
+      <h2 id="endScoreElement">0</h2>
+      <p>points</p>
+      <button id="startGameBtn">Start Game</button>
+    </div>
+  </div>
   <canvas></canvas>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
